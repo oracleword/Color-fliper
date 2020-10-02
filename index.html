@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+    var colors = ["red", "blue", "green", "purple", "orange"];
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }
+</script>
+    <body id='body'>
+    <div class="wrapper">
+    <button onclick="changeColor();">Click Me</button>
+</div>
+    </body>
+</html
